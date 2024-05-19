@@ -1,7 +1,7 @@
 {-# LANGUAGE DeriveGeneric #-}
 {-# LANGUAGE OverloadedStrings #-}
 
-module Types (SerperResult, OrganicGoogleSearchResult, SiteLink, PeopleAlsoAskResult, RelatedSearch) where
+module Web.Serper.Types (SerperResult, OrganicGoogleSearchResult, SiteLink, PeopleAlsoAskResult, RelatedSearch) where
 
 import Data.Aeson
 import Data.Aeson.Types (prependFailure, typeMismatch)

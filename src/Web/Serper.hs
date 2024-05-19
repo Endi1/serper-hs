@@ -1,6 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-module Lib
+module Web.Serper
   ( search,
   )
 where
@@ -9,7 +9,7 @@ import Data.Aeson (decode, encode, object, (.=))
 import Network.HTTP.Client
 import Network.HTTP.Client.TLS (tlsManagerSettings)
 import RIO.ByteString
-import Types (SerperResult)
+import Web.Serper.Types (SerperResult)
 
 search :: ByteString -> String -> IO (Maybe SerperResult)
 search apiKey query = do

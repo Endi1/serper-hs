@@ -21,8 +21,8 @@ description:         Please see the README on Github at <https://github.com/gith
 
 library
   hs-source-dirs:      src
-  exposed-modules:     Lib,
-                       Types
+  exposed-modules:     Web.Serper,
+                       Web.Serper.Types
   build-depends:       base >= 4.7 && < 5,
                        rio,
                        aeson,
